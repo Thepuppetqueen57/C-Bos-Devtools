@@ -1,0 +1,22 @@
+{
+  "name": "cbos-devtools",
+  "version": "1.0.0",
+  "description": "Dev tools for my project made in python named C-Bos",
+  "main": "index.js",
+  "bin": {
+    "cbosdev": "index.js"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thepuppetqueen57/C-Bos-Devtools"
+  },
+  "keywords": [
+    "cli",
+    "command-line"
+  ],
+  "author": "puppet57",
+  "license": "MIT"
+}
