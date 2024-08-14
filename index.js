@@ -5,10 +5,11 @@ const fs = require('fs')
 const path = require('path')
 
 // const { exec } = require('child_process')
-const { spawn } = require('child_process');
+const { spawn } = require('child_process')
+const { msleep } = require('./lib/mainlib')
 
 if(subcommand == "addpackage") {
-    const package = process.argv[3]
+    const pkg = process.argv[3]
 
     function importpackage(packageName) {
         const filePath = path.join(process.cwd(), 'C-Bos.py')
@@ -54,12 +55,19 @@ if(subcommand == "addpackage") {
         const pipcommand = spawn(`pip`, ['install', packageName])
 
         pipcommand.stdout.on('data', (data) => {
-            console.log(`${data}`);
-        });
+            console.log(`${data}`)
+        })
     }
 
-    importpackage(package)
-    installpackage(package)
+    importpackage(pkg)
+    installpackage(pkg)
+} else if (subcommand == "help") {
+    (async () => {
+        console.log("Heres a list of subcommands for the C-Bos Devtools:")
+        await msleep(500)
+        console.log("1: addpackage (Installs a pip package, imports it in cbos, and adds it to requirements.txt)")
+        console.log("To use it run cbosdev addpackage [package-name]")
+    })()
 } else {
     console.error("Unknown subcommand")
 }

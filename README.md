@@ -11,6 +11,6 @@
  Then run `npm install cbos-devtools`
 
 # Usage
- Go to the cbos directory and run `cbosdev addpackage [package you want to add]`
+ If you installed it run `cbosdev help`
 
- That will install the package you specified then add it to C-Bos.py and requirements.txt
+ If your using npx run `npx cbosdev help`

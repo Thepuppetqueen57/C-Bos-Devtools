@@ -1,6 +1,6 @@
 {
   "name": "cbos-devtools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dev tools for my project made in python named C-Bos",
   "main": "index.js",
   "bin": {
