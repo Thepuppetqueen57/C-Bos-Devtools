@@ -14,3 +14,16 @@
  If you installed it run `cbosdev help`
 
  If your using npx run `npx cbosdev help`
+
+# Changelog
+## 1.0.2
+
+Changed error message for unknown subcommand
+
+## 1.0.1
+
+Added help subcommand
+
+# 1.0.0
+
+Added this npm package into existence

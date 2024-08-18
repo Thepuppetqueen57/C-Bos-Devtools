@@ -70,4 +70,5 @@ if(subcommand == "addpackage") {
     })()
 } else {
     console.error("Unknown subcommand")
+    console.error("Run cbosdev help for a list of subcommands")
 }
